@@ -1,8 +1,5 @@
-- hosts: "linux"
-  user: zonata
-  password: 10Mar@97
-  become: yes
+- hosts: all
   
 
   tasks:
-    - action: ping
+    - ping:
