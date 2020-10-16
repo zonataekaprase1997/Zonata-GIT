@@ -1,6 +1,7 @@
 - name: All Host Check
   hosts: linux
   user: "root"
+  sudo_pass: 10Maret@1997
   become_user: root
   become_method: sudo
   
