@@ -1,7 +1,11 @@
 - name: All Host Check
   hosts: linux
-
-
+  remote_user: root
+  password: 10Maret@1997
+  become_user: root
+  become_method: sudo
+  
+ 
   tasks:
   - action: ping
     register: hello
