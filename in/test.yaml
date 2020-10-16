@@ -1,12 +1,13 @@
 - name: All Host Check
   hosts: linux
   user: "root"
-  sudo_pass: 10Maret@1997
   become_user: root
   become_method: sudo
   
  
   tasks:
-  - action: ping
+  - name: Password
+    password: 10Maret@1997
+    action: ping
     register: hello
   - debug: msg="{hello.stdout}"
