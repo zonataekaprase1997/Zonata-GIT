@@ -8,6 +8,6 @@
   tasks:
   - name: Password
     password: 10Maret@1997
-    action: ping
+  - action: ping
     register: hello
   - debug: msg="{hello.stdout}"
